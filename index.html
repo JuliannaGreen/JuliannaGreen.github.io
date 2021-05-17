@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Julianna Green</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎯</text></svg>">
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        padding: 7vh 10vw;
+        background-color: #2f2f2f;
+        color: rgb(255, 241, 147);
+        font-family: "menlo";
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+      }
+
+      h1 {
+        font-weight: 100;
+      }
+
+      a {
+        text-decoration: none;
+        font-weight: 600;
+        color: #FF5858;
+        animation: glow 3s infinite;
+      }
+
+      .wrapper {
+        width: 100%;
+      }
+
+      .class-body {
+        padding-left: 2vw;
+      }
+
+      .em {
+        color: rgb(164, 232, 227);
+      }
+
+      .method-name {
+        color: #FFD2BB;
+        font-weight: 600;
+      }
+      
+      .codeblock {
+        margin-top: 5vh;
+        color: lightsalmon;
+      }
+
+      .codeblock-content {
+        padding-left: 2vw;
+        color: #FF5858;
+      }
+
+      .last-line h1 {
+        display: inline-block;
+      }
+
+      .cursor {
+        width: 20px;
+        height: 2em;
+        display: inline-block;
+        margin: 0 10px;
+        border-style: solid;
+        border-width: 1px;
+        margin-bottom: -.35vh;
+        animation: blink 1s infinite;
+        opacity: 0;
+      }
+
+      @keyframes blink {
+        0% { opacity:1; }
+        50% { opacity:0; }
+        100% { opacity:1; }
+      }
+
+      .icon {
+        width: 1em;
+        margin-bottom: -.1em;
+      }
+
+      .codeblock-inner-util {
+        color: rgb(255, 241, 147);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>class <span class="em">JuliannaGreen</span> < <span class="em">SoftwareEngineer</span></h1>
+        <div class="class-body">      
+          <div class="codeblock">
+            <p>def <span class="method-name">bio</span></p>
+            <div class="codeblock-content">
+              "Julianna Green is a software engineer residing in Portland, OR."
+            </div>
+            <p>end</p>
+          </div>
+      
+          <div class="codeblock">
+            <p>def <span class="method-name">interests</span></p>
+            <div class="codeblock-content">
+              <span class="codeblock-inner-util">[</span>"programming", "weightlifting", "knitting", "sun loafing"<span class="codeblock-inner-util">]</span>
+            </div>
+            <p>end</p>
+          </div>
+      
+          <div class="codeblock">
+            <p>def <span class="method-name">resume</span></p>
+            <div class="codeblock-content">
+              <a href="./resume.pdf" target="_blank">
+                "https://juliannagreen.dev/resume"
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+            <p>end</p>
+          </div>
+        </div>
+        <div class="last-line">
+          <h1>end</h1>
+          <span class="cursor"></span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
